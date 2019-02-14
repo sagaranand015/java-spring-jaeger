@@ -67,13 +67,14 @@ public class JaegerAutoConfiguration {
                                       Metrics metrics) {
 
     final JaegerTracer.Builder builder =
-        new JaegerTracer.Builder(serviceName)
+        new JaegerTracer.Builder("Demo-Service02")
             .withReporter(reporter)
             .withSampler(sampler)
             .withMetrics(metrics);
 
     tracerCustomizers.forEach(c -> c.customize(builder));
 
+    System.out.println("Returning the Built Tracer...");
     return builder.build();
   }
 
