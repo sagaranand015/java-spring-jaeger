@@ -24,6 +24,7 @@
     </parent>
 
     <artifactId>opentracing-spring-jaeger-starter</artifactId>
+    <version>1.0.3-SNAPSHOT</version>
 
     <properties>
       <main.basedir>${project.basedir}/..</main.basedir>
