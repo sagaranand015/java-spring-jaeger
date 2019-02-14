@@ -24,6 +24,7 @@
   </parent>
 
   <artifactId>opentracing-spring-jaeger-cloud-starter</artifactId>
+  <version>1.0.3-SNAPSHOT</version>
 
   <properties>
     <main.basedir>${project.basedir}/..</main.basedir>
@@ -31,9 +32,15 @@
   </properties>
 
   <dependencies>
+    <!--<dependency>-->
+      <!--<groupId>${project.groupId}</groupId>-->
+      <!--<artifactId>opentracing-spring-jaeger-starter</artifactId>-->
+    <!--</dependency>-->
+
     <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>opentracing-spring-jaeger-starter</artifactId>
+      <groupId>net.jpmchase.opentracing</groupId>
+      <artifactId>opentracing-jaeger-starter</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
     </dependency>
 
     <dependency>
